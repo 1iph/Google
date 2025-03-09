@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+html, body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    color: #000000;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+/* Left side navigation */
+.nav1 {
+    display: flex;
+    gap: 15px;
+}
+.nav1 a {
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+}
+.nav1 a:hover {
+    text-decoration: underline;
+}
+
+/* Right side navigation */
+.nav2 {
+    position: fixed;
+    right: 20px;
+    top: 15px;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+.nav2 a {
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+}
+.nav2 a:hover {
+    text-decoration: underline;
+}
+
+/* Profile image */
+.pfp {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.Google{
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 100px;
+}
+.G p{
+    color: rgb(29, 107, 223);
+}
+.O p2{
+    color: rgb(228, 52, 40);
+}
+.O2 p3{
+    color: rgb(255, 196, 0);
+}
+.g p4{
+    color: rgb(29, 107, 223);
+}
+.l p5{
+    color: green;
+}
+.e p6{
+    color: rgb(228, 52, 40);
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    border: 1px solid #dfe1e5;
+    box-shadow: 0 4px 12px rgba(160, 160, 160, 0.363);
+    border-radius: 24px;
+    padding: 12px 20px;
+    max-width: 1000px;
+    margin: 20px auto;
+    transition: box-shadow 0.2s ease-in-out;
+    background-color: transparent;
+}
+
+/* Magnifying glass icon */
+.search-box i.fa-magnifying-glass {
+    color: #9aa0a6;
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+/* Microphone icon */
+.search-box i.mic-icon {
+    color: #9aa0a6;
+    font-size: 20px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+/* Add a cool hover effect on the mic */
+.search-box i.mic-icon:hover {
+    transform: scale(1.1);
+    color: #4285f4;
+}
+
+/* Input field */
+.search-box input {
+    outline: none;
+    border: none;
+    font-size: 18px;
+    flex-grow: 1;
+}
+
+/* Placeholder text */
+.search-box input::placeholder {
+    color: #9aa0a6;
+}
+
+/* Smooth hover effect like Google */
+.search-box:hover {
+    box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+}
+
+/* Buttons section */
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.buttons button {
+    background-color: #f8f9fa;
+    border: 0px solid #dfe1e5;
+    padding: 10px 20px;
+    margin: 0 5px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+/* Button hover effect */
+.buttons button:hover {
+    background-color: #f1f3f4;
+    border-color: #c6c6c6;
+    box-shadow: 0 4px 12px rgba(160, 160, 160, 0.363);
+}
+.settings{
+    display: none;
+    background-color: white;
+    background-color: #ffffff;
+    border: 1px solid #dfe1e5;
+    box-shadow: 0 4px 12px rgba(160, 160, 160, 0.363);
+    border-radius: 14px;
+    padding: 12px 20px;
+    max-width: 130px;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    margin-bottom: 60px;
+    margin-right: 10px;
+}
+.settings.show{
+    display: block;
+}
+/* Categories inside the settings box */
+.categories div {
+    padding: 10px 0;
+    border-bottom: 1px solid #f1f1f1;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+/* Remove border for the last one */
+.categories div:last-child {
+    border-bottom: none;
+}
+
+/* Text style */
+.categories div p {
+    margin: 0;
+    font-size: 14px;
+    color: #5f6368;
+}
+
+/* Hover effect */
+.categories div:hover {
+    background-color: #f8f9fa;
+}
+
+/* Add a small pop-out effect */
+.categories div:hover p {
+    transform: translateX(5px);
+    transition: transform 0.2s ease;
+}
+
+
+
+/* Smooth shadow effect when hovered */
+.settings:hover {
+    box-shadow: 0 6px 16px rgba(160, 160, 160, 0.363);
+}
+
+
+.bottom {
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: rgb(241, 241, 241);
+    
+}
+.nav3{
+    display: flex;
+    gap: 15px;
+}
+.nav3 a{
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+}
+.nav3 a:hover{
+    text-decoration: underline;
+}
+.nav4{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+.nav4 a{
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+}
+.nav4 a:hover{
+    text-decoration: underline;
+}
+@media(max-width: 980px){
+    .bottom{
+        display: none;
+    }
+    .nav1{
+        display: none;
+    }
+    .nav2 a{
+        display: none;
+    }
+    .Google{
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 50px;
+    }
+    .pfp{
+        position: fixed;
+        margin-right: 10px;
+        top: 10px;
+        right: 0;
+    }
+
+}
